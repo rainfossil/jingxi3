@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+
+<filter>
+	<filter-name>ef</filter-name>
+	<filter-class>cn.com.filter.EncodingF</filter-class>
+	<init-param>
+		<param-name>encoding</param-name>
+		<param-value>utf-8</param-value>
+	</init-param>
+	<init-param>
+		<param-name>text</param-name>
+		<param-value>text/html</param-value>
+	</init-param>
+</filter>
+<filter-mapping>
+	<filter-name>ef</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+<filter>
+	<filter-name>rf</filter-name>
+	<filter-class>cn.com.filter.RightxF</filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>rf</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JxSL</servlet-name>
+    <servlet-class>cn.com.servlet.JxSL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SingleWare</servlet-name>
+    <servlet-class>cn.com.servlet.SingleWare</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginSL</servlet-name>
+    <servlet-class>cn.com.servlet.LoginSL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>searchAjax</servlet-name>
+    <servlet-class>cn.com.servlet.SearchAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MiddleParam</servlet-name>
+    <servlet-class>cn.com.servlet.MiddleParam</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginOut</servlet-name>
+    <servlet-class>cn.com.servlet.LoginOut</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterSL</servlet-name>
+    <servlet-class>cn.com.servlet.RegisterSL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopCartSL</servlet-name>
+    <servlet-class>cn.com.servlet.ShopCartSL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MyCar</servlet-name>
+    <servlet-class>cn.com.servlet.MyCar</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CountControl</servlet-name>
+    <servlet-class>cn.com.servlet.CountControl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AccountSL</servlet-name>
+    <servlet-class>cn.com.servlet.AccountSL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManagerFormSL</servlet-name>
+    <servlet-class>cn.com.servlet.ManagerFormSL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublishSL</servlet-name>
+    <servlet-class>cn.com.servlet.PublishSL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ForumSL</servlet-name>
+    <servlet-class>cn.com.servlet.ForumSL</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CommentAjax</servlet-name>
+    <servlet-class>cn.com.servlet.CommentAjax</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>JxSL</servlet-name>
+    <url-pattern>/jx</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SingleWare</servlet-name>
+    <url-pattern>/sware</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginSL</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>searchAjax</servlet-name>
+    <url-pattern>/ajax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MiddleParam</servlet-name>
+    <url-pattern>/mp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginOut</servlet-name>
+    <url-pattern>/out</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterSL</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopCartSL</servlet-name>
+    <url-pattern>/shopcart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyCar</servlet-name>
+    <url-pattern>/mycar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CountControl</servlet-name>
+    <url-pattern>/cc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AccountSL</servlet-name>
+    <url-pattern>/account</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManagerFormSL</servlet-name>
+    <url-pattern>/mfs</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishSL</servlet-name>
+    <url-pattern>/publish</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ForumSL</servlet-name>
+    <url-pattern>/forum</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentAjax</servlet-name>
+    <url-pattern>/commentajax</url-pattern>
+  </servlet-mapping>
+  	<resource-ref>
+      <description>DB Connection</description>
+      <res-ref-name>jdbc/jx</res-ref-name>
+      <res-type>javax.sql.DataSource</res-type>
+      <res-auth>Container</res-auth>
+  	</resource-ref>
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

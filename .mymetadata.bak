@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="jingxi3"
+  id="myeclipse.1411523555750"
+  context-root="/jingxi2"
+  j2ee-spec="5.0"
+  archive="jingxi3.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

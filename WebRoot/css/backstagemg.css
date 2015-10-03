@@ -1,0 +1,92 @@
+body{margin:0px;
+			padding-left:27px;
+			font-size:17px;}
+		a{text-decoration:none;
+			color:black;}	
+		li{list-style-type:none;		
+		height:55px;
+		width:156px;
+		font-size:33px;
+		padding-left:8px;
+		padding-top:8px;
+		background-repeat:no-repeat;
+		background-image:url("image/effect/border1.jpg");}
+		img{border:0px;}
+		#1{height:680px;
+			width:1370px;
+			margin-top:0px;}
+		.1{
+			height:50px;
+			width:1370px;
+			}
+		.2{
+			height:80px;
+			width:1370px;
+			}
+		.3{
+			height:470px;
+			width:1370px;
+			}
+		.4{
+			height:80px;
+			width:1370px;
+			}
+
+		.12{
+			height:33px;
+			width:500px;
+			float:right;}
+
+		.1 a{
+			height:33px;	
+			padding-top:13px;}
+	
+		.p3{
+			font-size:13px;	
+			margin-bottom:23px;
+			color:#a7a7a7;
+			width:750px;
+			height:50px;
+			margin-left:300px;
+			padding-top:23px;}
+		.p3 span{color:black;}
+		.main{float:left;
+			font-size:38px;
+			padding-top:10px;
+			padding-left:77px}
+		.31{position:absolute;
+			z-index:1;
+			height:470px;
+			width:750px;
+			margin-left:-3px;
+			background-repeat:no-repeat;
+			background-color:white;
+			float:left;
+			margin-left:300px;
+			background-image:url("image/effect/border4.jpg");}
+		#31211{display:block;}	
+		#3121{color:black;}
+		#3122{color:#a7a7a7;}
+		.31 div{padding-left:23px;
+			padding-top:23px;
+			display:none}
+		.31 table{margin-bottom:23px;}
+		#312 label{font-size:23px;}
+		.32{position:absolute;
+			z-index:2;
+			height:468px;
+			width:228px;
+			background-color:white;
+			float:left;
+			margin-left:73px;
+			background-repeat:no-repeat;
+			background-image:url("image/effect/border3.jpg");}
+		.32 ul{
+			margin-top:16px;
+			width:156px;
+			float:right;
+			padding-right:3px;}
+		#special{
+			background-image:url("image/effect/border2.jpg");
+			}
+		#311{display:block;}
