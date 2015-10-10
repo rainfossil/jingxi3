@@ -7,34 +7,34 @@ body{margin:0px;
 		
 		li{list-style-type:none;}
 		img{border:0px;}
-		#1{
+		#rf_1{
 			height:680px;
 			width:1370px;
 			
 			margin-top:0px;}
-		.1{
+		.rf_1{
 			height:50px;
 			width:1370px;
 			}
-		.2{
+		.rf_2{
 			height:80px;
 			width:1370px;
 			}
-		.3{
+		.rf_3{
 			height:470px;
 			width:1370px;
 			}
-		.4{
+		.rf_4{
 			height:80px;
 			width:1370px;
 			}
 
-		.12{
+		.rf_12{
 			height:33px;
 			width:500px;
 			float:right;}
 
-		.1 a{
+		.rf_1 a{
 			height:33px;	
 			padding-top:13px;}
 	
@@ -51,18 +51,18 @@ body{margin:0px;
 			font-size:38px;
 			padding-top:10px;
 			padding-left:77px}
-		.31{height:470px;
+		.rf_31{height:470px;
 			width:950px;
 			
 			margin-left:230px;}
-		.311{height:333px;
+		.rf_311{height:333px;
 			width:380px;
 			float:right;
 			margin-top:23px;}
-		.312{float:left;
+		.rf_312{float:left;
 			margin-top:23px;}
 		.p1{font-size:20px;}
-		.3110{height:23px;
+		.rf_3110{height:23px;
 			width:230px;
 			margin-left:70px;
 			margin-top:5px;

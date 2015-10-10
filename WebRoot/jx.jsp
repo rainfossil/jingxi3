@@ -23,9 +23,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    	<div id="1">
-    		<div class="1">
-			<div class="12">
+    	<div id="rf_1">
+    		<div class="rf_1">
+			<div class="rf_12">
 				<c:choose>
 					<c:when test="${not empty sessionScope.acc}">
 						<a href="account">${sessionScope.acc }</a>
@@ -44,20 +44,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<a href="out">退出</a>
 			</div>
 		</div>
-    	<div class="2">
+    	<div class="rf_2">
     		<div class="main"><a href="jx">京西</a></div>
-			<div class="13">
+			<div class="rf_13">
 				<form action="jx" method="post">
-					<input class="111" type="text" name="search" value="" size="50" id="sajax" autocomplete="off" onkeyup="messageinf();"></input>
-					<input class="112" type="submit" name="sea" value="搜索>>"></input>
+					<input class="rf_111" type="text" name="search" value="" size="50" id="sajax" autocomplete="off" onkeyup="messageinf();"></input>
+					<input class="rf_112" type="submit" name="sea" value="搜索>>"></input>
 				</form>
-				<div class="131" id="xxx" style="display:none">
+				<div class="rf_131" id="xxx" style="display:none">
 				</div>
 			</div>
 		</div>
-    		<div class="3">
-			<div class="11">
-				<div class="113">
+    		<div class="rf_3">
+			<div class="rf_11">
+				<div class="rf_113">
 					<ul>
 						<li><a href="jx?target=p">&amp;&nbsp;图&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</a></li>
 						<li><a href="jx?target=m">&amp;&nbsp;音&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐</a></li>
@@ -69,22 +69,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</ul>
 				</div>
 			</div>
-			<div class="14">
+			<div class="rf_14">
 				<%int i=30; %>
 				<c:forEach items="${li }" var="lii">
 					<%i++; %>
 					<div>
 						<style type="text/css">
-							#<%=i %> a:hover{color:orange;
+							#<%="rf_"+i %> a:hover{color:orange;
 								background-image:url(${lii.address2});
 								background-repeat:no-repeat;}
 						</style>
 						<ul>
-						<li class="23" id="<%=i %>">
+						<li class="rf_23" id="rf_<%=i %>">
 							<img src="${lii['address1'] }"/>
 							<a href="${lii['address3'] }" title="点击查看原图"></a>
 						</li>
-						<li id="3">
+						<li id="rf_3">
 							编号：${lii.number }<br/>
 							名称：${lii.name }<br/>
 							时间：${lii.dayTime }<br/><br/>
@@ -93,19 +93,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</ul>
 					</div>
 				</c:forEach>
-
 			</div>
-			<div class="15">
+			<div class="rf_15">
 				${page }
 			</div>
 		</div>
-    		<div class="4">
+    		<div class="rf_4">
 			<p class="p3">copyright@京西2018&nbsp;<span>中文(简体)</span>《中华人民共和国电信与信息服务业务经营许可证》编号:京ICP证060911号</p>
 		</div>
 	</div>
-  </body>
-</html>
-<script type="text/javascript">
+	<script type="text/javascript">
  var xmlRequest;
  var flag=false;
      //创建异步请求对象的方法
@@ -125,7 +122,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        //alert(searchvalue);
        searchvalue=encodeURI(encodeURI(searchvalue,"UTF-8"),"UTF-8");
        //定义服务器处理异步请求组件的URL及请求参数。
-       var urls="http://www.rainfossil.cn:36501/jingxi3/ajax?searchvalue="+searchvalue+"&ts="+new Date().getTime();
+       var urls="<%=basePath%>ajax?searchvalue="+searchvalue+"&ts="+new Date().getTime();
        xmlRequest=createXmlHttpRequest();  //创建异步请求对象
        xmlRequest.onreadystatechange=returnCall; //调用回调函数
        xmlRequest.open("GET",urls,true);  //建立到服务器连接
@@ -153,11 +150,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 			var arr=new Array();
 			for(var i=0;i<array.length;i++){
-				arr[i]=$("<div id=7"+i+">"+array[i]+"</div>");			
+				arr[i]=$("<div id=rf_7"+i+">"+array[i]+"</div>");			
 				messagediv.append(arr[i]);
 				messagediv.on(
 					"click",
-					"#7"+i,
+					"#rf_7"+i,
 					function(){
 						inp.val($(this).text());
 						md.attr("style","display:none");
@@ -166,14 +163,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				);
 				messagediv.on(
 					"mousemove",
-					"#7"+i,
+					"#rf_7"+i,
 					function(){
 						$(this).attr("style","background-color:#ece9d8");
 					}
 				);
 				messagediv.on(
 					"mouseout",
-					"#7"+i,
+					"#rf_7"+i,
 					function(){
 						$(this).attr("style","background-color:white");
 					}
@@ -258,4 +255,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			}
 			*/
 </script>
+  </body>
+</html>
+
 
